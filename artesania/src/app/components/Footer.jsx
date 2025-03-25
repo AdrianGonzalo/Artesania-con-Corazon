@@ -20,7 +20,7 @@ const Footer = () => {
       {/* Iconos de redes sociales */}
       <div className="flex space-x-6 my-4">
         <a
-          href="https://www.pinterest.com"
+          href="https://es.pinterest.com/agonzalojulibert/_created"
           target="_blank"
           rel="noopener noreferrer"
         >
