@@ -1,10 +1,11 @@
 @import "tailwindcss";
 
-/* :root {
-  --background: #ffffff;
-  --foreground: #171717;
-} */
+:root {
+  --text: #171717;
+  --buttonline: #787569;
+  --foundButton: #c9c5b1;
+}
 
 body {
-  background: #d0f2d3;
+  background: #ede8d0;
 }
