@@ -40,12 +40,12 @@ const Images = ({ folder }) => {
   ].filter((src) => src.includes(folder));
 
   return (
-    <div className="mt-24 grid grid-cols-2 gap-x-8 gap-y-33 justify-items-center m-14">
+    <div className="mt-24 grid grid-cols-2 gap-x-20 gap-y-15 justify-items-center m-14">
       {" "}
       {imagenes.map((src, index) => (
         <div
           key={index}
-          className="relative w-55 h-48 flex items-center justify-center"
+          className="relative w-45 h-48 flex items-center justify-center"
         >
           {" "}
           <Image
@@ -55,7 +55,7 @@ const Images = ({ folder }) => {
             width={100}
             height={100}
             objectFit="cover "
-            className="border-[#113313] border-6 rounded-2xl"
+            className="border-[#113313] border-4 rounded-2xl"
           />
         </div>
       ))}
