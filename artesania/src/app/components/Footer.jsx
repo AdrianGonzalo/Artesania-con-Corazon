@@ -56,7 +56,7 @@ const Footer = () => {
           </a>
         </p>
       </div>
-      <div className="bg-amber-900 text mt-4 p-4">
+      <div className="bg-amber-900 text mt-4 p-4 text-center">
         <p className="w-full text-(--beige)">
           © 2025 Artesania Con Corazon. Todos los derechos reservados.
         </p>
