@@ -40,7 +40,7 @@ const Images = ({ folder }) => {
   ].filter((src) => src.includes(folder));
 
   return (
-    <div className="mt-24 grid grid-cols-2 gap-x-20 gap-y-15 justify-items-center m-14">
+    <div className="mt-16 grid grid-cols-2 gap-x-20 gap-y-15 justify-items-center m-14">
       {" "}
       {imagenes.map((src, index) => (
         <div
