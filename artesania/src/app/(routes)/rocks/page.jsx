@@ -2,11 +2,11 @@ import Images from "@/app/components/Images";
 
 const RocksPage = () => {
   return (
-    <div>
-      <h1 className="text-center mt-10 bg-emerald-300 w-[200px] border-1 border-solid border-b-emerald-800 text-3xl ml-5">
+    <div className="min-h-screen flex flex-col items-center justify-center">
+      <h1 className="text-center mt-10 text-4xl font-serif text-gray-800 uppercase tracking-wider">
         Mis Piedras
       </h1>
-      <Images />
+      <Images folder="rocks" />
     </div>
   );
 };
