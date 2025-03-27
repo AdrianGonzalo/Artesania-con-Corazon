@@ -39,7 +39,7 @@ const Images = ({ folder }) => {
     `/rocks/r25.jpg`,
     `/rocks/r26.jpg`,
     `/rocks/r27.jpg`,
-    `/rocks/r28.jpg`,
+    //  28
     `/rocks/r29.jpg`,
     `/rocks/r30.jpg`,
     `/rocks/r31.jpg`,
@@ -50,9 +50,9 @@ const Images = ({ folder }) => {
     `/rocks/r36.jpg`,
     `/rocks/r37.jpg`,
     `/rocks/r38.jpg`,
-    `/rocks/r39.jpg`,
+    // `/rocks/r39.jpg`,
     `/rocks/r40.jpg`,
-    `/rocks/r41.jpg`,
+    // 41
     `/rocks/r41.jpg`,
     `/rocks/r43.jpg`,
     `/rocks/r44.jpg`,
@@ -62,11 +62,11 @@ const Images = ({ folder }) => {
   ].filter((src) => src.includes(folder));
 
   return (
-    <div className="mt-16 grid grid-cols-2 gap-x-20 gap-y-15 justify-items-center m-14">
+    <div className="mt-16 grid grid-cols-2 gap-x-20 gap-y-4 justify-items-center m-14">
       {imagenes.map((src, index) => (
         <div
           key={index}
-          className="relative w-42 h-48 flex items-center justify-center cursor-pointer"
+          className="relative w-35 h-auto flex items-center justify-center cursor-pointer"
           onClick={() => setSelectedImage(src)}
         >
           <Image
@@ -93,7 +93,7 @@ const Images = ({ folder }) => {
             <Image
               src={selectedImage}
               alt="Imagen ampliada"
-              width={350}
+              width={300}
               height={350}
               className="rounded-lg border-[12px] shadow-lg"
               style={{
