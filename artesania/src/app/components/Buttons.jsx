@@ -7,13 +7,10 @@ const Buttons = () => {
         <Link href="/rocks">Piedras</Link>
       </div>
       <div className="w-full border-3 rounded-xl border-[#113313] border-solid bg-[var(--foundButton)] h-[60px] flex justify-center items-center">
-        <Link href="/piedras">Madera</Link>
+        <Link href="/woods">Pirografia</Link>
       </div>
       <div className="w-full border-3 rounded-xl border-[#113313] border-solid bg-[var(--foundButton)] h-[60px] flex justify-center items-center">
-        <Link href="/dibujos">Dibujos</Link>
-      </div>
-      <div className="w-full border-3 rounded-xl border-[#113313] border-solid bg-[var(--foundButton)] h-[60px] flex justify-center items-center">
-        <Link href="/otros">Pirografia</Link>
+        <Link href="/draws">Dibujos</Link>
       </div>
       <div className="w-full border-3 rounded-xl border-[#113313] border-solid bg-[var(--foundButton)] h-[60px] flex justify-center items-center">
         <Link href="/otros">Otros</Link>
