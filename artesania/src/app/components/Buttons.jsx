@@ -10,7 +10,7 @@ const Buttons = () => {
         <Link href="/woods">Pirografia</Link>
       </div>
       <div className="w-full border-3 rounded-xl border-[#113313] border-solid bg-[var(--foundButton)] h-[60px] flex justify-center items-center">
-        <Link href="/draws">Dibujos</Link>
+        <Link href="/draws">Macetas</Link>
       </div>
       <div className="w-full border-3 rounded-xl border-[#113313] border-solid bg-[var(--foundButton)] h-[60px] flex justify-center items-center">
         <Link href="/otros">Otros</Link>

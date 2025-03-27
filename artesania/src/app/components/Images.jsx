@@ -69,15 +69,7 @@ const Images = ({ folder }) => {
               alt="Logo del artista"
               className="absolute top-10 left-3 w-[55px]"
             />
-            {/* BASICS
-            <Image
-              src={selectedImage}
-              alt="Imagen ampliada"
-              width={300}
-              height={300}
-              className="rounded-lg shadow-lg"
-            /> */}
-            MUSEUM 3
+
             <Image
               src={selectedImage}
               alt="Imagen ampliada"
@@ -89,32 +81,10 @@ const Images = ({ folder }) => {
                 borderColor: "#c8a453",
               }}
             />
-            {/* ORNAMENTO TIPOGRAFICO
-            <div className="relative p-6">
-              <div className="absolute top-0 left-0 text-gray-300 text-2xl">
-                ✦
-              </div>
-              <div className="absolute top-0 right-0 text-gray-300 text-2xl">
-                ✦
-              </div>
-              <div className="absolute bottom-0 left-0 text-gray-300 text-2xl">
-                ✦
-              </div>
-              <div className="absolute bottom-0 right-0 text-gray-300 text-2xl">
-                ✦
-              </div>
 
-              <Image
-                src={selectedImage}
-                alt="Imagen ampliada"
-                width={350}
-                height={350}
-                className="border-6 border-gray-300 rounded-lg"
-              />
-            </div> */}
             <ShareButton
-              message={`¡Mira esta imagen de mi galería!`}
-              url={selectedImage}
+              message={`¡Mira esta galería!`}
+              url={`https://artesaniadecorazon.netlify.app/`}
               className="bg-blue-600 hover:bg-blue-700 mt-6"
             />
             <button
