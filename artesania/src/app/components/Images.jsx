@@ -79,7 +79,7 @@ const Images = ({ folder }) => {
               className="mt-3 w-full max-w-[350px] bg-red-600 text-white px-4 py-2 rounded-lg text-lg font-semibold"
               onClick={() => setSelectedImage(null)}
             >
-              Cerrar Imagen
+              Volver a las imagenes
             </button>
           </div>
         </div>
