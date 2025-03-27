@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import ShareButton from "./ShareButton";
 
 const Images = ({ folder }) => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -111,6 +112,11 @@ const Images = ({ folder }) => {
                 className="border-6 border-gray-300 rounded-lg"
               />
             </div> */}
+            <ShareButton
+              message={`¡Mira esta imagen de mi galería!`}
+              url={selectedImage}
+              className="bg-blue-600 hover:bg-blue-700 mt-6"
+            />
             <button
               className="mt-3 w-full max-w-[350px] bg-red-600 text-white px-4 py-2 rounded-lg text-lg font-semibold"
               onClick={() => setSelectedImage(null)}
