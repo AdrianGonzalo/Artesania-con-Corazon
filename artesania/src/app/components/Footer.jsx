@@ -4,7 +4,6 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <div>
-      X
       <div className="flex flex-col items-center justify-center text-center p-6">
         {/* Imagen de ornamento */}
         <Image

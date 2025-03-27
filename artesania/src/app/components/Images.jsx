@@ -66,15 +66,51 @@ const Images = ({ folder }) => {
             <img
               src="/Logo Mare3.png"
               alt="Logo del artista"
-              className="absolute top-3 left-3 w-[55px]"
+              className="absolute top-10 left-3 w-[55px]"
             />
+            {/* BASICS
             <Image
               src={selectedImage}
               alt="Imagen ampliada"
               width={300}
               height={300}
               className="rounded-lg shadow-lg"
+            /> */}
+            MUSEUM 3
+            <Image
+              src={selectedImage}
+              alt="Imagen ampliada"
+              width={350}
+              height={350}
+              className="rounded-lg border-[12px] shadow-lg"
+              style={{
+                borderStyle: "ridge",
+                borderColor: "#c8a453",
+              }}
             />
+            {/* ORNAMENTO TIPOGRAFICO
+            <div className="relative p-6">
+              <div className="absolute top-0 left-0 text-gray-300 text-2xl">
+                ✦
+              </div>
+              <div className="absolute top-0 right-0 text-gray-300 text-2xl">
+                ✦
+              </div>
+              <div className="absolute bottom-0 left-0 text-gray-300 text-2xl">
+                ✦
+              </div>
+              <div className="absolute bottom-0 right-0 text-gray-300 text-2xl">
+                ✦
+              </div>
+
+              <Image
+                src={selectedImage}
+                alt="Imagen ampliada"
+                width={350}
+                height={350}
+                className="border-6 border-gray-300 rounded-lg"
+              />
+            </div> */}
             <button
               className="mt-3 w-full max-w-[350px] bg-red-600 text-white px-4 py-2 rounded-lg text-lg font-semibold"
               onClick={() => setSelectedImage(null)}
