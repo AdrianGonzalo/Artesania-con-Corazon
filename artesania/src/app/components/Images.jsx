@@ -1,15 +1,16 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 
 const Images = ({ folder }) => {
+  const [selectedImage, setSelectedImage] = useState(null);
+
   if (!folder) {
     return <p>Debe proporcionarse una carpeta de imágenes</p>;
   }
 
   const imagenes = [
-    // ROCKS
-
     `/rocks/r1.jpg`,
     `/rocks/r2.jpg`,
     `/rocks/r3.jpg`,
@@ -41,24 +42,48 @@ const Images = ({ folder }) => {
 
   return (
     <div className="mt-16 grid grid-cols-2 gap-x-20 gap-y-15 justify-items-center m-14">
-      {" "}
       {imagenes.map((src, index) => (
         <div
           key={index}
-          className="relative w-45 h-48 flex items-center justify-center"
+          className="relative w-42 h-48 flex items-center justify-center cursor-pointer"
+          onClick={() => setSelectedImage(src)}
         >
-          {" "}
           <Image
             src={src}
             alt={`Imagen ${index + 1}`}
             layout="responsive"
             width={100}
             height={100}
-            objectFit="cover "
+            objectFit="cover"
             className="border-[#113313] border-4 rounded-2xl"
           />
         </div>
       ))}
+
+      {selectedImage && (
+        <div className="fixed inset-0 flex items-center justify-center bg-[rgba(0,0,0,0.9)] z-50">
+          <div className="relative flex flex-col items-center">
+            <img
+              src="/Logo Mare3.png"
+              alt="Logo del artista"
+              className="absolute top-3 left-3 w-[55px]"
+            />
+            <Image
+              src={selectedImage}
+              alt="Imagen ampliada"
+              width={300}
+              height={300}
+              className="rounded-lg shadow-lg"
+            />
+            <button
+              className="mt-3 w-full max-w-[350px] bg-red-600 text-white px-4 py-2 rounded-lg text-lg font-semibold"
+              onClick={() => setSelectedImage(null)}
+            >
+              Cerrar Imagen
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
