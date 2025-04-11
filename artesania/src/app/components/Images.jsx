@@ -40,7 +40,6 @@ const Images = ({ folder }) => {
     `/rocks/r25.jpg`,
     `/rocks/r26.jpg`,
     `/rocks/r27.jpg`,
-    //  28
     `/rocks/r29.jpg`,
     `/rocks/r30.jpg`,
     `/rocks/r31.jpg`,
@@ -52,7 +51,6 @@ const Images = ({ folder }) => {
     `/rocks/r37.jpg`,
     `/rocks/r38.jpg`,
     `/rocks/r40.jpg`,
-    // 41
     `/rocks/r41.jpg`,
     `/rocks/r43.jpg`,
     `/rocks/r44.jpg`,
@@ -75,6 +73,15 @@ const Images = ({ folder }) => {
     `/rocks/r61.jpg`,
     `/rocks/r62.jpg`,
     `/rocks/r63.jpg`,
+    `/rocks/r64.jpg`,
+    `/rocks/r65.jpg`,
+    `/rocks/r66.jpg`,
+    `/rocks/r67.jpg`,
+    `/rocks/r68.jpg`,
+    `/rocks/r69.jpg`,
+    `/rocks/r70.jpg`,
+    `/rocks/r71.jpg`,
+    `/rocks/r72.jpg`,
 
     //Pirograbados
 
