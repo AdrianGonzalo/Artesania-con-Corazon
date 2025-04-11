@@ -5,6 +5,7 @@ import Logo from "./components/Logo";
 
 import Ornamento from "./components/OrnamentoInit";
 import Title from "./components/Title";
+import Footer from "./components/Footer";
 
 const rochester = Rochester({
   weight: "400",
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
         <Ornamento />
         <Title sofiaClass={sofia.className} />
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -12,6 +12,7 @@ const Images = ({ folder }) => {
   }
 
   const imagenes = [
+    //Rocas
     `/rocks/r1.jpg`,
     `/rocks/r2.jpg`,
     `/rocks/r3.jpg`,
@@ -50,7 +51,6 @@ const Images = ({ folder }) => {
     `/rocks/r36.jpg`,
     `/rocks/r37.jpg`,
     `/rocks/r38.jpg`,
-    // `/rocks/r39.jpg`,
     `/rocks/r40.jpg`,
     // 41
     `/rocks/r41.jpg`,
@@ -59,64 +59,97 @@ const Images = ({ folder }) => {
     `/rocks/r45.jpg`,
     `/rocks/r46.jpg`,
     `/rocks/r47.jpg`,
+    `/rocks/r48.jpg`,
+    `/rocks/r49.jpg`,
+    `/rocks/r50.jpg`,
+    `/rocks/r51.jpg`,
+    `/rocks/r52.jpg`,
+    `/rocks/r53.jpg`,
+    `/rocks/r54.jpg`,
+    `/rocks/r55.jpg`,
+    `/rocks/r56.jpg`,
+    `/rocks/r57.jpg`,
+    `/rocks/r58.jpg`,
+    `/rocks/r59.jpg`,
+    `/rocks/r60.jpg`,
+    `/rocks/r61.jpg`,
+    `/rocks/r62.jpg`,
+    `/rocks/r63.jpg`,
+
+    //Pirograbados
+
+    `/woods/w1.jpg`,
+    `/woods/w2.jpg`,
+    `/woods/w3.jpg`,
+    `/woods/w4.jpg`,
+    `/woods/w5.jpg`,
+    `/woods/w6.jpg`,
+    `/woods/w7.jpg`,
+    `/woods/w8.jpg`,
+    `/woods/w9.jpg`,
   ].filter((src) => src.includes(folder));
 
   return (
-    <div className="mt-16 grid grid-cols-2 gap-x-20 gap-y-4 justify-items-center m-14">
-      {imagenes.map((src, index) => (
-        <div
-          key={index}
-          className="relative w-35 h-auto flex items-center justify-center cursor-pointer"
-          onClick={() => setSelectedImage(src)}
-        >
-          <Image
-            src={src}
-            alt={`Imagen ${index + 1}`}
-            layout="responsive"
-            width={100}
-            height={100}
-            objectFit="cover"
-            className="border-[#113313] border-4 rounded-2xl"
-          />
-        </div>
-      ))}
-
-      {selectedImage && (
-        <div className="fixed inset-0 flex items-center justify-center bg-[rgba(0,0,0,0.9)] z-50">
-          <div className="relative flex flex-col items-center">
-            <img
-              src="/Logo Mare3.png"
-              alt="Logo del artista"
-              className="absolute top-10 left-3 w-[55px]"
-            />
-
+    <>
+      <div className="mt-16 grid grid-cols-2 gap-x-20 gap-y-4 justify-items-center m-14">
+        {imagenes.map((src, index) => (
+          <div
+            key={index}
+            className="relative w-37 h-auto flex items-center justify-center cursor-pointer"
+            onClick={() => setSelectedImage(src)}
+          >
             <Image
-              src={selectedImage}
-              alt="Imagen ampliada"
-              width={300}
-              height={350}
-              className="rounded-lg border-[12px] shadow-lg"
-              style={{
-                borderStyle: "ridge",
-                borderColor: "#c8a453",
-              }}
+              src={src}
+              alt={`Imagen ${index + 1}`}
+              layout="responsive"
+              width={100}
+              height={100}
+              objectFit="cover"
+              className="border-[#113313] border-4 rounded-2xl"
             />
-
-            <ShareButton
-              message={`¡Mira esta galería!`}
-              url={`https://artesaniadecorazon.netlify.app/`}
-              className="bg-blue-600 hover:bg-blue-700 mt-6"
-            />
-            <button
-              className="mt-3 w-full max-w-[350px] bg-red-600 text-white px-4 py-2 rounded-lg text-lg font-semibold"
-              onClick={() => setSelectedImage(null)}
-            >
-              Volver a las imagenes
-            </button>
           </div>
-        </div>
-      )}
-    </div>
+        ))}
+
+        {selectedImage && (
+          <div className="fixed inset-0 flex items-center justify-center bg-[rgba(0,0,0,0.9)] z-50">
+            <div className="relative flex flex-col items-center">
+              <img
+                src="/Logo Mare3.png"
+                alt="Logo del artista"
+                className="absolute top-10 left-3 w-[55px]"
+              />
+
+              <Image
+                src={selectedImage}
+                alt="Imagen ampliada"
+                width={300}
+                height={350}
+                className="rounded-lg border-[12px] shadow-lg"
+                style={{
+                  borderStyle: "ridge",
+                  borderColor: "#c8a453",
+                }}
+              />
+
+              <ShareButton
+                message={`¡Mira esta galería!`}
+                url={`https://artesaniadecorazon.netlify.app/`}
+                className="bg-blue-600 hover:bg-blue-700 mt-6"
+              />
+              <button
+                className="mt-3 w-full max-w-[350px] bg-red-600 text-white px-4 py-2 rounded-lg text-lg font-semibold"
+                onClick={() => setSelectedImage(null)}
+              >
+                Volver a las imagenes
+              </button>
+            </div>
+          </div>
+        )}
+      </div>
+      <p className="text-center text-lg mt-8 font-medium text-gray-700">
+        Total de imágenes: {imagenes.length} y creciendo :)
+      </p>
+    </>
   );
 };
 

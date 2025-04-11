@@ -1,5 +1,4 @@
 import Images from "@/app/components/Images";
-import Footer from "@/app/components/Footer";
 
 const RocksPage = () => {
   return (
@@ -10,7 +9,6 @@ const RocksPage = () => {
         </h1>
         <Images folder="rocks" />
       </div>
-      <Footer />
     </>
   );
 };

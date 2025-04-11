@@ -10,10 +10,10 @@ const Buttons = () => {
         <Link href="/woods">Pirografia</Link>
       </div>
       <div className="w-full border-3 rounded-xl border-[#113313] border-solid bg-[var(--foundButton)] h-[60px] flex justify-center items-center">
-        <Link href="/draws">Macetas</Link>
+        <Link href="/flower-pots">Macetas</Link>
       </div>
       <div className="w-full border-3 rounded-xl border-[#113313] border-solid bg-[var(--foundButton)] h-[60px] flex justify-center items-center">
-        <Link href="/otros">Otros</Link>
+        <Link href="/others">Otros</Link>
       </div>
     </div>
   );
