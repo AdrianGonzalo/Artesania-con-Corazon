@@ -102,11 +102,6 @@ const Images = ({ folder }) => {
     //Macetas
 
     `/pots/p1.jpg`,
-    `/pots/p1.jpg`,
-    `/pots/p1.jpg`,
-    `/pots/p1.jpg`,
-    `/pots/p1.jpg`,
-    `/pots/p1.jpg`,
   ].filter((src) => src.includes(folder));
 
   return (
