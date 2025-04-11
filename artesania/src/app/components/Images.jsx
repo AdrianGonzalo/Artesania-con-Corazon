@@ -94,6 +94,10 @@ const Images = ({ folder }) => {
     `/woods/w7.jpg`,
     `/woods/w8.jpg`,
     `/woods/w9.jpg`,
+    `/woods/w10.jpg`,
+    `/woods/w11.jpg`,
+    `/woods/w12.jpg`,
+    `/woods/w13.jpg`,
   ].filter((src) => src.includes(folder));
 
   return (
