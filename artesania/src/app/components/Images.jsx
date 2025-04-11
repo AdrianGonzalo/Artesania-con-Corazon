@@ -89,7 +89,6 @@ const Images = ({ folder }) => {
     `/woods/w11.jpg`,
     `/woods/w12.jpg`,
     `/woods/w13.jpg`,
-    `/woods/w14.jpg`,
     `/woods/w17.jpg`,
     `/woods/w18.jpg`,
     `/woods/w2.jpg`,
