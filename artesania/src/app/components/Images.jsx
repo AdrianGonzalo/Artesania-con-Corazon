@@ -17,7 +17,6 @@ const Images = ({ folder }) => {
     `/rocks/r2.jpg`,
     `/rocks/r3.jpg`,
     `/rocks/r4.jpg`,
-    `/rocks/r5.jpg`,
     `/rocks/r6.jpg`,
     `/rocks/r7.jpg`,
     `/rocks/r8.jpg`,
@@ -29,7 +28,6 @@ const Images = ({ folder }) => {
     `/rocks/r14.jpg`,
     `/rocks/r15.jpg`,
     `/rocks/r16.jpg`,
-    `/rocks/r17.jpg`,
     `/rocks/r18.jpg`,
     `/rocks/r19.jpg`,
     `/rocks/r20.jpg`,
@@ -41,17 +39,14 @@ const Images = ({ folder }) => {
     `/rocks/r26.jpg`,
     `/rocks/r27.jpg`,
     `/rocks/r29.jpg`,
-    `/rocks/r30.jpg`,
     `/rocks/r31.jpg`,
     `/rocks/r32.jpg`,
     `/rocks/r33.jpg`,
     `/rocks/r34.jpg`,
     `/rocks/r35.jpg`,
     `/rocks/r36.jpg`,
-    `/rocks/r37.jpg`,
     `/rocks/r38.jpg`,
     `/rocks/r40.jpg`,
-    `/rocks/r41.jpg`,
     `/rocks/r43.jpg`,
     `/rocks/r44.jpg`,
     `/rocks/r45.jpg`,
@@ -73,24 +68,20 @@ const Images = ({ folder }) => {
     `/rocks/r61.jpg`,
     `/rocks/r62.jpg`,
     `/rocks/r63.jpg`,
-    `/rocks/r64.jpg`,
-    `/rocks/r65.jpg`,
-    `/rocks/r66.jpg`,
     `/rocks/r67.jpg`,
     `/rocks/r68.jpg`,
     `/rocks/r69.jpg`,
     `/rocks/r70.jpg`,
     `/rocks/r71.jpg`,
     `/rocks/r72.jpg`,
+    `/rocks/r73.jpg`,
+    `/rocks/r74.jpg`,
+    `/rocks/r75.jpg`,
+    `/rocks/r76.jpg`,
 
     //Pirograbados
 
     `/woods/w1.jpg`,
-    `/woods/w2.jpg`,
-    `/woods/w3.jpg`,
-    `/woods/w4.jpg`,
-    `/woods/w5.jpg`,
-    `/woods/w6.jpg`,
     `/woods/w7.jpg`,
     `/woods/w8.jpg`,
     `/woods/w9.jpg`,
@@ -102,6 +93,11 @@ const Images = ({ folder }) => {
     `/woods/w15.jpg`,
     `/woods/w16.jpg`,
     `/woods/w17.jpg`,
+    `/woods/w2.jpg`,
+    `/woods/w3.jpg`,
+    `/woods/w4.jpg`,
+    `/woods/w5.jpg`,
+    `/woods/w6.jpg`,
 
     //Macetas
 
@@ -171,7 +167,8 @@ const Images = ({ folder }) => {
         )}
       </div>
       <p className="text-center text-lg mt-8 font-medium text-gray-700">
-        Total de imágenes: {imagenes.length} y creciendo :)
+        Total de imágenes:{" "}
+        <span className="text-red-500">{imagenes.length} </span> y creciendo :)
       </p>
     </>
   );
