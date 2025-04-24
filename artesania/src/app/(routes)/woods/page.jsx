@@ -1,7 +1,4 @@
-"use client";
-
 import Images from "@/app/components/Images";
-import ScrollToTop from "@/app/components/scrollToTop";
 
 const WoodPage = () => {
   return (

@@ -1,7 +1,12 @@
 "use client";
 
 import Images from "@/app/components/Images";
-import ScrollToTop from "@/app/components/scrollToTop";
+
+import dynamic from "next/dynamic";
+
+const ScrollToTop = dynamic(() => import("@/app/components/ScrollToTop"), {
+  ssr: false,
+});
 
 const RocksPage = () => {
   return (
