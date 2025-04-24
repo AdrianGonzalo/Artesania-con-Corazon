@@ -1,4 +1,7 @@
+"use client";
+
 import Images from "@/app/components/Images";
+import ScrollToTop from "@/app/components/scrollToTop";
 
 const RocksPage = () => {
   return (
@@ -8,6 +11,7 @@ const RocksPage = () => {
           Mis Piedras
         </h1>
         <Images folder="rocks" />
+        <ScrollToTop />
       </div>
     </>
   );

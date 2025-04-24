@@ -8,6 +8,7 @@ const PotPage = () => {
           Mis macetas
         </h1>
         <Images folder="pots" />
+        <ScrollToTop />
       </div>
     </>
   );
