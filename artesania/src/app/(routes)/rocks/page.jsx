@@ -1,11 +1,5 @@
 import Images from "@/app/components/Images";
 
-// import dynamic from "next/dynamic";
-
-// const ScrollToTop = dynamic(() => import("@/app/components/ScrollToTop"), {
-//   ssr: false,
-// });
-
 const RocksPage = () => {
   return (
     <>
