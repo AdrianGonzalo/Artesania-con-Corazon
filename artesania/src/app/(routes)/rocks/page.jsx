@@ -1,12 +1,10 @@
-"use client";
-
 import Images from "@/app/components/Images";
 
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
 
-const ScrollToTop = dynamic(() => import("@/app/components/ScrollToTop"), {
-  ssr: false,
-});
+// const ScrollToTop = dynamic(() => import("@/app/components/ScrollToTop"), {
+//   ssr: false,
+// });
 
 const RocksPage = () => {
   return (
@@ -16,7 +14,6 @@ const RocksPage = () => {
           Mis Piedras
         </h1>
         <Images folder="rocks" />
-        <ScrollToTop />
       </div>
     </>
   );
